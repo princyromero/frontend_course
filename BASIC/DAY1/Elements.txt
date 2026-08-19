@@ -1,0 +1,57 @@
+DAY-1 13/08/26
+
+HTML-5
+WEB PAGES-3
+BOOTSTRAP-5
+TAILWIND CSS-(3or4)
+JS-(ES6+)
+REACT-(VITE 7or8)
+SQL-(WORKBENCH)
+
+
+HTML- Hyper Text Markup Language
+ *HTML stands for Hyper Text Markup Language. It is the standard language used to create and structure web pages.
+ *HTML uses tags as (<html>,<head>,<body>,<hl>,and <p>) to define elements like headings, paragraphs, images, links, tables and forms that a web browser displays
+
+CSS- Cascading Styles sheets (Design And Appearance Of The Webpages)
+ *Its controls the appearance (colors, fonts, layout).
+ *Is a stylesheet language used to styles and design HTML web pages.
+
+BOOTSTRAP-(Ready -Made Styling And Responsive Design Components)
+ *Bootstrap is a free, open-source front-end framework used to create responsive and attractive websites quickly.
+ *Bootstrap is a front-end framework that provides pre-designed HTML, CSS, and JavaScript components for building responsive websites and web applications.
+ *Its provides ready-made CSS classes and components such as buttons, navigation bars, forms, cards and tables
+
+JS-Java Script (Interaction And Functionality)
+ *JavaScript (JS) is a programming language used to make web pages interactive and dynamic.
+ *JavaScript is a scripting/programming language that allows websites to respond to user actions and change content, styles, and behavior dynamically.
+
+TAILWIND CSS- Utility-First CSS Framework
+ *tailwind CSS is a utility-first CSS framework that provides small, reusable CSS classes for creating custom website designs quickly.
+ *used to design and style websites quickly.
+ *Instead of writing your own CSS rules for every element, Tailwind provides ready-made utility classes that you add directly to your HTML.
+
+REACT-Java Script Library (Building Interactive User Interfaces)
+ *React is a JavaScript library used to build user interfaces (UIs), especially for web applications.
+ *It was developed by Facebook (now Meta) and is widely used for creating interactive and dynamic websites.
+ *React is a JavaScript library for building reusable and interactive user-interface components.
+
+SQL-Structured Query Language(Used to work With Databases and Data)
+ *SQL is a language that allows you to communicate with a database—for example, to add, find, change, or delete information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
