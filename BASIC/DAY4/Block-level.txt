@@ -1,0 +1,56 @@
+Block-level 
+
+A block-level tag is an HTML element that normally starts on a new line and takes up the entire available width of its parent element.
+Starts on a new line
+Takes up the full available width by default
+Can contain other elements, depending on the element
+Can have width, height, margin, and padding applied
+
+Inline Tags 
+
+Inline = same line
+Inline elements do not start on a new line.
+They take up only the space needed by their content.
+They are mainly used inside text or other elements.
+Common examples: span, a, b, i, strong.
+They are useful for styling or highlighting small parts of content.
+
+Semantic Tags
+
+Semantic elements have a clear meaning.
+They tell the browser and developer what the content represents.
+They make HTML code easy to understand.
+They improve SEO and accessibility.
+Common examples: header, nav, main, section, article, footer.
+They help create a clear structure for a webpage.
+
+non-semantic Tags
+
+Non-semantic elements do not clearly describe their content.
+They are mainly used as general containers.
+They are useful for grouping and styling content.
+The most common non-semantic elements are <div> and <span>.
+div is a block-level container.
+span is an inline container.
+
+Formatting Tags
+
+Formatting tags are used to change or emphasize the appearance of text.
+Formatting tags are used to style or emphasize text in HTML.
+Examples: b for bold, i for italic, u for underline, and mark for highlighting.
+
+Interactive Tags
+
+Interactive tags are HTML tags that allow users to interact with the webpage, such as clicking, entering information, selecting options, or opening/closing content.
+Used to interact with users.
+Allow users to click, enter, select, or submit information.
+Make webpages more dynamic and user-friendly.
+
+
+
+
+
+
+
+
+

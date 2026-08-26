@@ -1,0 +1,73 @@
+DAY-3 
+ 
+EVALUTION OF WEBSITE LANGUAGE
+
+*History of the Evaluation of Website Language
+
+*The evaluation of website language developed alongside the growth of the World Wide Web. 
+
+*In the 1990s, websites were mainly evaluated for basic readability, grammar, clarity, and usability because web communication was still relatively new.
+
+*During the early 2000s, researchers and web designers began paying greater attention to user experience, information architecture, accessibility, and audience needs.    
+
+*Language evaluation expanded beyond grammar to include factors such as navigation labels, instructions, tone, and the ease with which users could understand online information.
+
+*In the 2010s, the growth of social media, mobile websites, and digital marketing increased the importance of concise, persuasive, audience-focused language. Concepts such as plain language, inclusive language, search-engine optimization (SEO), and content usability became important in evaluating website text.
+
+*Today, website language evaluation is a multidisciplinary practice involving linguistics, communication, usability, accessibility, marketing, and artificial intelligence. 
+
+SGML – Standard Generalized Markup Language
+
+*It is a standard language for defining the structure and markup rules of documents.
+
+* It was developed to allow documents to be stored, organized, and exchanged independently of particular software or computer systems.
+
+*SGML was standardized as ISO 8879 in 1986
+
+TCP – Transmission Control Protocol
+
+*TCP (Transmission Control Protocol) is a connection-oriented communication protocol used to reliably transmit data between computers over a network, including the Internet.
+
+IP – Internet Protocol
+
+*IP (Internet Protocol) is a communication protocol used to identify devices and deliver data packets from one network to another over the Internet or other IP networks.
+
+LAN – Local Area Network
+
+*LAN (Local Area Network) is a network that connects computers, phones, printers, servers, and other devices within a small geographical area, such as a home, office, school, or building.
+
+File Extension
+
+A file extension is the set of letters or characters at the end of a filename that indicates the type or format of the file.
+
+For example:
+
+.txt → Text file
+.docx → Microsoft Word document
+.pdf → PDF document
+.jpg / .png → Image file
+.mp3 → Audio file
+.mp4 → Video file
+.html → Web page
+.css → Stylesheet
+.js → JavaScript file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

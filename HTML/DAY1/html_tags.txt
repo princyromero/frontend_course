@@ -1,0 +1,203 @@
+what are the tags in HTML?
+Tags are enclosed in angle brackets (< >) and usually come in pairs
+* Closing tags  *Opening tags
+* Self closing tags
+The content goes between the tags
+Tag	             Purpose
+<html>	             Root element of the HTML document
+<head>	             Contains metadata about the page
+<title>              Sets the page title shown in the browser tab
+<body>	             Contains the visible content of the page
+<h1> to <h6>	     Headings (largest to smallest)
+<p>	             Paragraph
+<img>	             Displays an image	
+
+                    HTML ELEMENTS
+┌───────────────────┼───────────────────┐
+STRUCTURE                 CONTENT                  FUNCTION        
+   |                          │                        │
+ *parent                  *Semantic                 *Interactive 
+ *child                   *Non-Semantic             *Form             
+ *Block                   *Formatting               *Media
+ *Inline                       |
+                             *Scripting  
+
+what is closing tags\Opening tags?
+*An closing tag tells the browser where an HTML element ends.
+*An opening tag is the tag that starts an HTML element.
+
+the tag name:
+*<p> → opening tag
+*Hello → content
+*</p> → closing tag
+
+Opening tag	Closing tag	Used for
+<html>	         </html>	HTML document
+<head>	         </head>	Page information
+<title>	         </title>	Page title
+<body>	         </body>	Page content
+<h1>	         </h1>	        Main heading
+<h2>	         </h2>	        Subheading
+<h3>	         </h3>	        Smaller heading
+<p>	         </p>	        Paragraph
+
+what is self closing tags?
+Self-closing tags are HTML tags that don't need a separate closing tag because they don't contain any content inside them.
+
+TAG              PURPOSE
+<br>        — creates a line break
+<hr>        — creates a horizontal line
+<img>       — displays an image
+<input>     — creates an input field
+<meta>      — provides information about the page
+<link>      — links external resources, such as CSS
+
+Example
+<img src="image.jpg" alt="Image">
+<br>
+<hr>
+<input type="text">
+
+Parent element:
+*A parent element is an HTML element that contains one or more other elements inside it.
+*An element that contains another element is called the parent.
+*Parent elements can be both semantic and non-semantic tags.
+<div> → parent element
+
+Example
+<div>
+    <p>Hello World</p>
+</div>
+
+Child element:
+*A child element is an HTML element that is directly inside another element (parent).
+*An element that is inside another element is called the child.
+*Child elements can also be either semantic or non-semantic tags.
+<p> → child element
+
+Example
+<div>
+    <p>Hello World</p>
+</div>
+
+BLOCK LEVEL ELEMENT
+Block-level elements are HTML elements that usually start on a new line and take up the full available width of their parent.
+
+TAG                  PURPOSE
+<div>             — general container
+<p>               — paragraph
+<h1> to <h6>      — headings
+<main>            — main content
+<ul>              — unordered list
+<ol>              — ordered list
+<li>              — list item
+<form>            — form
+<table>           — table
+
+Example
+<h1>Heading</h1>
+<p>Paragraph</p>
+<div>Content</div>
+
+INLINE ELEMENTS
+Inline elements are HTML elements that do not normally start on a new line. They take up only as much width as their content needs.
+
+TAG                 PURPOSE
+<span>          — inline container
+<a>             — link
+<b>             — bold text
+<i>             — italic text
+<small>         — smaller text
+<label>         — label for a form control
+<img>           — image
+<input>         — input field
+<br>            — line break
+
+Example
+<p>Hello <span>World</span>! Visit <a href="#">Google</a>.</p>
+
+SEMANTIC ELEMENTS
+Semantic elements are HTML elements that clearly describe what their content means to both the browser and the developer.
+
+
+TAG               PURPOSE
+<header>	-Header of a page or section
+<nav>	        -Navigation links
+<main>	        -Main content of the page
+<section>	-A section of related content
+<article>	-Independent content, such as a blog post
+<aside>	        -Related or secondary content
+<footer>	-Footer of a page or section
+<figure>	-Image, diagram, or other illustrated content
+<figcaption>	-Caption for a <figure>
+<time>	        -Date or time
+
+Example
+<header>Header</header>
+<main>Main Content</main>
+<footer>Footer</footer>
+
+NON SEMANTIC 
+Non-semantic elements are HTML elements that do not tell us what their content means. They are mainly used as general containers for grouping and styling content.
+
+TAG              PURPOSE
+<div>           — a block-level general container
+<span>          — an inline general container
+
+EXAMPLE
+<div>This is a section</div>
+<span>This is some text</span>
+
+
+FORMATTING ELEMENTS
+Formatting elements are HTML tags used to change or describe the appearance or emphasis of text.
+
+TAG              PURPOSE
+<b>	        -Bold text
+<u>	        -Underlined text	
+<mark>	        -Highlighted text
+<small>	        -Smaller text
+<del>	        -Deleted/removed text
+<ins>	        -Inserted text
+<sub>	        -Subscript text
+<sup>	        -Superscript text
+
+EXAMPLE
+<p><b>Bold</b></p>
+<p><i>Italic</i></p>
+<p><u>Underline</u></p>
+<p><mark>Highlight</mark></p>
+<p>H<sub>2</sub>O</p>
+<p>x<sup>2</sup></p>
+
+INTERACTIVE ELEMENTS
+Interactive elements are HTML elements that allow users to interact with a webpage by clicking, typing, selecting, submitting, or changing something.
+
+TAG              PURPOSE
+<a>             –creates a link that users can click.
+<button>        –creates a clickable button.
+<input>         –allows users to enter or select data.
+<textarea>      –provides a multi-line text input.
+<select>        –creates a dropdown list.
+<option>        –defines an option inside a dropdown.
+<form>          –groups input elements and allows users to submit information.
+<label>         –provides a label for an input field.
+<details>       –creates expandable/collapsible content.
+<summary>       –provides the clickable heading for <details>.   
+
+Example
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name">
+
+  <button type="submit">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
