@@ -1,0 +1,21 @@
+.product{
+    background-color:aquamarine;
+    height: 350px;
+    width: 300px;
+    
+}
+
+.cards{
+    background-color: aqua;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+
+}
+
+.btn{
+    background-color: beige;
+    padding: 3px
+    text-align:center;
+}

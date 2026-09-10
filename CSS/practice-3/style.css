@@ -1,0 +1,15 @@
+.parent{
+    background-color: aqua;
+    width: 200px;
+    padding: 10px;
+}
+.style{
+    background-color: aqua;
+    width: 200px;
+    padding:10px
+}
+.style-2{
+    background-color: aqua;
+    width: 200px;
+    padding: 10px;
+}
