@@ -6,163 +6,498 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: lightgray;
     color: #333;
+    background: rgb(227, 233, 231);
 }
+
 
 header {
-    width: 100%;
-    height: 70px;
     background-color: white;
+    height: 65px;
     display: flex;
+    gap: 200px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0 35px;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    position: fixed;
+    z-index: 3;
 }
+
 
 .logo {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
-    color: #222;
 }
 
-.logo span {
-    color: red;
+.logo img {
+    width: 150px;
+    height: auto;
 }
 
 nav {
+    height: 80px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    right: 140px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 14px;
+    color: gray;
+    font-size: 13px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #e5322d;
-}
-
-.login {
-    padding: 10px 22px;
-    border: 1px solid red;
-    background-color: white;
     color: red;
-    border-radius: 5px;
-    cursor: pointer; 
-    
 }
 
-.sign {
-    padding: 10px 22px;
-    border: 1px solid red;
-    background-color: white;
-    color: red;
-    border-radius: 5px;
-    cursor: pointer;
+.account {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-
-.hero {
-    text-align: center;
-    padding: 70px 40px;
+.account a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #222;
+.account button {
+    background: rgb(238, 56, 56);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 50px;
+.account span {
+    font-size: 25px;
 }
 
 
 .tools {
-    max-width: 1100px;
+    max-width: 1350px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    padding: 45px 35px;
+    position: relative;
+    top: 50px;
 }
 
-.icon {
-    width: 55px;
-    height: 65px;
-    background-color: red;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.card {
-    background-color: white;
-    padding: 30px 20px;
-    border-radius: 10px;
-    
-}
-
-
-.card h2 {
-    font-size: 20px;
+.tools > h1 {
+    text-align: center;
+    font-size: 38px;
     margin-bottom: 12px;
 }
 
+.tools > p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.6;
+    color: dimgray;
+}
+
+
+.categories {
+   
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.categories button {
+    background: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+    padding: 10px 18px;
+    border-radius: 22px;
+    font-size: 14px;
+}
+
+.categories button:first-child {
+    background:white;
+    color:black;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.card {
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 22px;
+    min-height: 210px;
+    background: white;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px lightgray;
+}
+
+.card h2 {
+    font-size: 19px;
+    margin: 18px 0 10px;
+}
+
 .card p {
+    color: dimgray;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card small {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background: lightgray;
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+
+
+.work {
+    padding: 70px 50px;
+    background: whitesmoke;
+}
+
+.work > h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cardimg {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cardimg1 {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.cardimg2 {
+    width: 100%;
+    height: 230px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: gray;
+    overflow: hidden;
+}
+
+.cardimg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.cardimg1 h3 {
+    font-size: 20px;
+    margin: 30px;
+}
+
+.cardimg1 p {
+    margin: 0 25px;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+.cardimg1 span {
+    display: block;
+    text-align: right;
+    font-size: 25px;
+    margin: 20px 25px 0;
+}
+
+
+.img1 {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.img2 {
+    height: 500px;
+    background: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: gray;
+}
+
+.img3 h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.img3 p {
+    color: rosybrown;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.img3 button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: 1px solid indianred;
+    background: white;
+    color: black;
+    border-radius: 7px;
+}
+
+
+.trust {
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.trust h2 {
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
-.card button {
-    background-color:red;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+.trust > p {
+    max-width: 850px;
+    margin: auto;
+    color: dimgray;
+    line-height: 1.6;
+}
+
+.security {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
     font-weight: bold;
 }
 
-.card button:hover {
-    background-color: red;
+
+footer {
+    background: rgb(104, 102, 102);
+    color: white;
+    padding: 60px 70px 25px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 35px;
+}
+
+.footer-content h3 {
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.footer-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.stores button {
+    display: block;
+    width: 150px;
+    padding: 9px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.footer-bottom {
+    border-top: 1px solid lightgray;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.footer-bottom p {
+    margin-left: auto;
+    font-size: 12px;
 }
 
 
-@media (max-width: 900px) {
 
-.tools {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width: 1000px) {
 
-.nav {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
-
-.header {
+    header {
         padding: 0 20px;
     }
 
-.hero h1 {
-        font-size: 30px;
+    nav {
+        gap: 15px;
     }
 
-.tools {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cardimg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img1 {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .account {
+        gap: 10px;
+    }
+
+    .tools {
+        padding: 30px 15px;
+    }
+
+    .tools > h1 {
+        font-size: 28px;
+    }
+
+    .tools > p {
+        font-size: 14px;
+    }
+
+    .categories {
+        gap: 8px;
+    }
+
+    .categories button {
+        padding: 8px 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .work {
+        padding: 45px 15px;
+    }
+
+    .work > h2 {
+        font-size: 28px;
+    }
+
+    .cardimg {
+        grid-template-columns: 1fr;
+    }
+
+    .img1 {
+        margin: 40px auto;
+        padding: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .img2 {
+        height: 300px;
+    }
+
+    .img3 h2 {
+        font-size: 25px;
+    }
+
+    .security {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 40px 25px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tools > h1 {
+        font-size: 24px;
+    }
+
+    .account {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 18px;
     }
 }
