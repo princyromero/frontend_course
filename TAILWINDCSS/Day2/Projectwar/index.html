@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareerConnect - Connect Your Skills. Build Your Career. Shape Your Future. A modern career development platform powered by AI.">
+  <meta name="keywords" content="career, skills, jobs, resume builder, AI career assistant, future of work, student careers, freshers">
+  <meta name="author" content="CareerConnect Team">
+  <title>CareerConnect | Connect Your Skills. Build Your Career. Shape Your Future.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><circle cx='50' cy='50' r='46' fill='url(%23g)'/><path d='M30 65 L48 35 L70 65' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='50' cy='30' r='6' fill='%23ffffff'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- Ambient Glow Elements for Futuristic Backdrop -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN NAVIGATION BAR                                                      -->
+  <!-- ========================================================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-icon-wrapper">
+          <i class="bi bi-cpu-fill brand-icon"></i>
+        </span>
+        <span class="brand-text">Career<span class="text-gradient">Connect</span></span>
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#past">Past</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#future">Future</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#future-2030">2030 Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Button -->
+        <div class="nav-cta-wrapper d-flex align-items-center gap-2">
+          <button class="btn btn-gradient btn-sm-glow" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+            <i class="bi bi-rocket-takeoff me-1"></i> Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HOME / HERO SECTION                                                   -->
+  <!-- ========================================================================= -->
+  <section id="home" class="hero-section min-vh-100 d-flex flex-column justify-content-center">
+    <div class="container hero-container position-relative">
+      <div class="row align-items-center g-5 pt-lg-5">
+        
+        <!-- Left Content Column -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="hero-badge mb-3 fade-in-up">
+            <span class="badge-pill">
+              <i class="bi bi-stars text-cyan"></i> Powered by AI & Future Technologies
+            </span>
+          </div>
+
+          <h1 class="hero-heading display-4 fw-extrabold mb-4 fade-in-up delay-1">
+            Connect Your Skills. <br class="d-none d-md-block">
+            <span class="text-gradient">Build Your Career.</span> <br class="d-none d-md-block">
+            Shape Your Future.
+          </h1>
+
+          <p class="hero-description lead mb-4 fade-in-up delay-2">
+            CareerConnect helps you discover the right career opportunities, improve your skills, prepare for interviews, and stay ready for the changing world of work.
+          </p>
+
+          <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4 fade-in-up delay-3">
+            <a href="#services" class="btn btn-outline-cyan btn-lg">
+              <i class="bi bi-compass me-2"></i> Explore Careers
+            </a>
+            <button class="btn btn-gradient btn-lg" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+              <i class="bi bi-lightning-charge-fill me-2"></i> Get Started
+            </button>
+          </div>
+
+          <!-- Quick Trust Pill -->
+          <div class="hero-trust d-flex align-items-center justify-content-center justify-content-lg-start gap-3 text-muted small fade-in-up delay-4">
+            <div class="d-flex align-items-center gap-1">
+              <i class="bi bi-patch-check-fill text-cyan"></i> Verified Industry Paths
+            </div>
+            <span class="dot-divider">•</span>
+            <div class="d-flex align-items-center gap-1">
+              <i class="bi bi-robot text-purple"></i> Adaptive AI Mentorship
+            </div>
+            <span class="dot-divider">•</span>
+            <div class="d-flex align-items-center gap-1">
+              <i class="bi bi-shield-check text-cyan"></i> ATS-Compliant
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual / Interactive Showcase Column -->
+        <div class="col-lg-5">
+          <div class="hero-visual-wrapper position-relative text-center">
+            
+            <!-- Tech Orbital Centerpiece -->
+            <div class="hero-orb-center">
+              <div class="pulse-ring ring-1"></div>
+              <div class="pulse-ring ring-2"></div>
+              <div class="pulse-ring ring-3"></div>
+              <div class="orb-core">
+                <i class="bi bi-diagram-3-fill"></i>
+                <div class="orb-core-label">AI CORE</div>
+              </div>
+            </div>
+
+            <!-- Floating Card 1: AI Match -->
+            <div class="floating-badge-card badge-match position-absolute">
+              <div class="d-flex align-items-center gap-3">
+                <div class="badge-icon-box bg-purple-glow">
+                  <i class="bi bi-bullseye"></i>
+                </div>
+                <div class="text-start">
+                  <div class="badge-title">AI Career Match</div>
+                  <div class="badge-sub text-cyan fw-bold">98% Fit &bull; AI Architect</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: ATS Score -->
+            <div class="floating-badge-card badge-ats position-absolute">
+              <div class="d-flex align-items-center gap-3">
+                <div class="badge-icon-box bg-cyan-glow">
+                  <i class="bi bi-file-earmark-check"></i>
+                </div>
+                <div class="text-start">
+                  <div class="badge-title">ATS Resume Strength</div>
+                  <div class="badge-sub text-success fw-bold">94/100 &bull; Ready to Apply</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 3: Trending Skills -->
+            <div class="floating-badge-card badge-trend position-absolute">
+              <div class="d-flex align-items-center gap-3">
+                <div class="badge-icon-box bg-indigo-glow">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div class="text-start">
+                  <div class="badge-title">Skill Demand Pulse</div>
+                  <div class="badge-sub text-purple fw-bold">+48% GenAI & Cloud</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- STATISTICS SECTION                                                    -->
+      <!-- ===================================================================== -->
+      <div class="hero-stats-wrapper mt-5 pt-4">
+        <div class="glass-panel stats-panel p-4 p-md-5">
+          <div class="row g-4 text-center">
+            
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <div class="stat-icon-wrapper mb-2">
+                  <i class="bi bi-people-fill text-cyan"></i>
+                </div>
+                <h3 class="stat-number fw-bold text-white mb-1">
+                  <span class="counter" data-target="10000">0</span><span class="text-cyan">+</span>
+                </h3>
+                <p class="stat-label text-muted mb-0">Career Seekers</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <div class="stat-icon-wrapper mb-2">
+                  <i class="bi bi-journal-code text-purple"></i>
+                </div>
+                <h3 class="stat-number fw-bold text-white mb-1">
+                  <span class="counter" data-target="500">0</span><span class="text-purple">+</span>
+                </h3>
+                <p class="stat-label text-muted mb-0">Learning Resources</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <div class="stat-icon-wrapper mb-2">
+                  <i class="bi bi-briefcase-fill text-cyan"></i>
+                </div>
+                <h3 class="stat-number fw-bold text-white mb-1">
+                  <span class="counter" data-target="1000">0</span><span class="text-cyan">+</span>
+                </h3>
+                <p class="stat-label text-muted mb-0">Job Opportunities</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <div class="stat-icon-wrapper mb-2">
+                  <i class="bi bi-building-check text-purple"></i>
+                </div>
+                <h3 class="stat-number fw-bold text-white mb-1">
+                  <span class="counter" data-target="100">0</span><span class="text-purple">+</span>
+                </h3>
+                <p class="stat-label text-muted mb-0">Industry Partners</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- CAREER GROWTH VISUAL / TIMELINE TRACK                                -->
+      <!-- ===================================================================== -->
+      <div class="hero-growth-timeline mt-5">
+        <div class="text-center mb-4">
+          <span class="badge-pill mb-2">
+            <i class="bi bi-arrow-repeat text-cyan"></i> The Career Transformation Engine
+          </span>
+          <h4 class="text-white fw-bold mb-1">Your 5-Stage Evolution Path</h4>
+          <p class="text-muted small">From foundational learning to limitless leadership growth</p>
+        </div>
+
+        <div class="growth-track-container position-relative">
+          <div class="growth-line" id="growthLine"></div>
+          
+          <div class="row g-3 justify-content-between align-items-center text-center">
+            
+            <div class="col growth-step-item active" data-step="1">
+              <div class="step-circle mb-2">
+                <i class="bi bi-book"></i>
+              </div>
+              <h6 class="step-name mb-0">Learn</h6>
+              <span class="step-desc d-none d-md-block">Core Concepts</span>
+            </div>
+
+            <div class="col-auto growth-step-arrow d-none d-sm-block">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+
+            <div class="col growth-step-item" data-step="2">
+              <div class="step-circle mb-2">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h6 class="step-name mb-0">Build Skills</h6>
+              <span class="step-desc d-none d-md-block">Hands-on Labs</span>
+            </div>
+
+            <div class="col-auto growth-step-arrow d-none d-sm-block">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+
+            <div class="col growth-step-item" data-step="3">
+              <div class="step-circle mb-2">
+                <i class="bi bi-award"></i>
+              </div>
+              <h6 class="step-name mb-0">Get Experience</h6>
+              <span class="step-desc d-none d-md-block">Live Projects</span>
+            </div>
+
+            <div class="col-auto growth-step-arrow d-none d-sm-block">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+
+            <div class="col growth-step-item" data-step="4">
+              <div class="step-circle mb-2">
+                <i class="bi bi-search"></i>
+              </div>
+              <h6 class="step-name mb-0">Find Opportunities</h6>
+              <span class="step-desc d-none d-md-block">Jobs & Internships</span>
+            </div>
+
+            <div class="col-auto growth-step-arrow d-none d-sm-block">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+
+            <div class="col growth-step-item" data-step="5">
+              <div class="step-circle mb-2">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <h6 class="step-name mb-0">Grow</h6>
+              <span class="step-desc d-none d-md-block">Leadership & Scale</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. ABOUT SECTION                                                         -->
+  <!-- ========================================================================= -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-info-circle text-cyan"></i> Who We Are
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          About <span class="text-gradient">CareerConnect</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          Bridging the gap between traditional education and high-demand industry employment through modern skill intelligence and tailored career roadmaps.
+        </p>
+      </div>
+
+      <!-- Core Capabilities Grid (6 Pillars) -->
+      <div class="row g-3 mb-5">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-compass-fill text-cyan"></i>
+            <span>Career Guidance</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-lightning-fill text-purple"></i>
+            <span>Skill Development</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-binoculars-fill text-cyan"></i>
+            <span>Job Discovery</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-file-earmark-person-fill text-purple"></i>
+            <span>Resume Building</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-chat-quote-fill text-cyan"></i>
+            <span>Interview Prep</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-pillar-chip">
+            <i class="bi bi-graph-up-arrow text-purple"></i>
+            <span>Professional Growth</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Target Audience Cards -->
+      <div class="row g-4 mb-5">
+        
+        <!-- For Students -->
+        <div class="col-lg-4">
+          <div class="glass-card about-card h-100 p-4 p-xl-5">
+            <div class="card-icon-box bg-cyan-glow mb-4">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div class="target-tag text-cyan mb-2">Early Foundation</div>
+            <h3 class="h4 fw-bold text-white mb-3">For Students</h3>
+            <p class="text-muted mb-4">
+              Discover career paths, learn new skills, and understand industry requirements before graduating. Gain practical clarity to eliminate career confusion early.
+            </p>
+            <ul class="feature-list list-unstyled mb-4">
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Curated foundational roadmaps</li>
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Campus-to-corporate orientation</li>
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Academic project alignment</li>
+            </ul>
+            <a href="#services" class="card-link text-cyan">Explore Student Track <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- For Freshers -->
+        <div class="col-lg-4">
+          <div class="glass-card about-card h-100 p-4 p-xl-5 featured-card">
+            <div class="featured-badge">High Demand</div>
+            <div class="card-icon-box bg-purple-glow mb-4">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <div class="target-tag text-purple mb-2">Entry-Level Launch</div>
+            <h3 class="h4 fw-bold text-white mb-3">For Freshers</h3>
+            <p class="text-muted mb-4">
+              Build resumes, prepare for interviews, and discover entry-level opportunities. Transform academic knowledge into job-winning portfolios and confidence.
+            </p>
+            <ul class="feature-list list-unstyled mb-4">
+              <li><i class="bi bi-check2-circle text-purple me-2"></i>ATS-ready resume generator</li>
+              <li><i class="bi bi-check2-circle text-purple me-2"></i>Technical & HR mock interviews</li>
+              <li><i class="bi bi-check2-circle text-purple me-2"></i>Internship & fresher matchmaking</li>
+            </ul>
+            <a href="#services" class="card-link text-purple">Launch Fresher Career <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- For Professionals -->
+        <div class="col-lg-4">
+          <div class="glass-card about-card h-100 p-4 p-xl-5">
+            <div class="card-icon-box bg-indigo-glow mb-4">
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </div>
+            <div class="target-tag text-cyan mb-2">Career Acceleration</div>
+            <h3 class="h4 fw-bold text-white mb-3">For Professionals</h3>
+            <p class="text-muted mb-4">
+              Improve existing skills, explore new opportunities, and adapt to changing technologies like AI, Cloud, and Web3 without stalling your current role.
+            </p>
+            <ul class="feature-list list-unstyled mb-4">
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Upskilling & lateral tech switches</li>
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Executive & tech lead readiness</li>
+              <li><i class="bi bi-check2-circle text-cyan me-2"></i>Global remote compensation insights</li>
+            </ul>
+            <a href="#services" class="card-link text-cyan">Scale Your Seniority <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Our Mission Highlight -->
+      <div class="mission-banner glass-panel p-4 p-md-5 text-center position-relative overflow-hidden">
+        <div class="mission-glow" aria-hidden="true"></div>
+        <div class="position-relative z-1 max-w-850 mx-auto">
+          <span class="badge-pill mb-3">
+            <i class="bi bi-bullseye text-purple"></i> Our North Star
+          </span>
+          <h3 class="display-6 fw-bold text-white mb-3">Our Mission</h3>
+          <blockquote class="blockquote mission-quote mb-4">
+            <p class="fs-4 fst-italic text-light-glow">
+              &ldquo;Our mission is to make career development simple, accessible, and future-ready for everyone.&rdquo;
+            </p>
+          </blockquote>
+          <p class="text-muted mb-0">
+            We believe talent is evenly distributed across the globe, but opportunity is not. CareerConnect unlocks that access by democratizing world-class career intelligence.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. SERVICES SECTION                                                      -->
+  <!-- ========================================================================= -->
+  <section id="services" class="section-padding bg-secondary-dark position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-grid-1x2-fill text-cyan"></i> Services & Solutions
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          Supercharge Your <span class="text-gradient">Professional Path</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          Explore powerful modern tools built with AI intelligence to guide, prepare, and elevate every stage of your career journey.
+        </p>
+      </div>
+
+      <!-- Services Cards Grid (6 Services) -->
+      <div class="row g-4 mb-5">
+        
+        <!-- Service 1: Career Guidance -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4">
+            <div class="service-icon-box bg-cyan-glow mb-3">
+              <i class="bi bi-compass"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Career Guidance</h4>
+            <p class="text-muted mb-3">
+              Help users understand different career paths based on their interests, academic strengths, and personality traits through intelligent skill mapping.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">Aptitude Mapping</span>
+              <span class="badge-soft">Role Insights</span>
+              <span class="badge-soft">Domain Explorer</span>
+            </div>
+            <a href="#career-roadmap" class="service-link">View Guidance Paths <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2: Skill Development -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4">
+            <div class="service-icon-box bg-purple-glow mb-3">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Skill Development</h4>
+            <p class="text-muted mb-3">
+              Provide learning resources and recommended skills for different careers. Master industry tools from foundational coding to modern AI frameworks.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">Curated Roadmaps</span>
+              <span class="badge-soft">Free Certifications</span>
+              <span class="badge-soft">Skill Quizzes</span>
+            </div>
+            <a href="#how-it-works" class="service-link">Explore Skill Tracks <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3: Resume Builder -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4">
+            <div class="service-icon-box bg-indigo-glow mb-3">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Resume Builder</h4>
+            <p class="text-muted mb-3">
+              Allow users to create professional and ATS-friendly resumes. Get instant recommendations for action verbs, keyword densities, and formatting.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">ATS Scanner</span>
+              <span class="badge-soft">Clean Formats</span>
+              <span class="badge-soft">PDF Export</span>
+            </div>
+            <button class="btn btn-sm btn-outline-cyan w-100" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              <i class="bi bi-check2-circle me-1"></i> Check Resume Score Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Job Opportunities -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4">
+            <div class="service-icon-box bg-cyan-glow mb-3">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Job Opportunities</h4>
+            <p class="text-muted mb-3">
+              Help users discover suitable job and internship opportunities matched directly against their active skill profile and experience level.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">Internships</span>
+              <span class="badge-soft">Remote Jobs</span>
+              <span class="badge-soft">Fast-Track Hiring</span>
+            </div>
+            <a href="#contact" class="service-link">Browse Open Positions <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 5: Interview Preparation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4">
+            <div class="service-icon-box bg-purple-glow mb-3">
+              <i class="bi bi-person-video3"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Interview Preparation</h4>
+            <p class="text-muted mb-3">
+              Provide interview questions, practice sessions, and preparation resources for top tech firms, startups, and product corporations.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">Behavioral STAR</span>
+              <span class="badge-soft">System Design</span>
+              <span class="badge-soft">Mock Questions</span>
+            </div>
+            <a href="#services" class="service-link">Start Practice Session <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 6: AI Career Assistant -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card glass-card h-100 p-4 border-ai-glow">
+            <div class="service-icon-box bg-ai-gradient mb-3">
+              <i class="bi bi-stars"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">AI Career Assistant</h4>
+            <p class="text-muted mb-3">
+              An AI-powered assistant that can suggest career paths, skills, learning plans, and interview preparation in conversational real-time.
+            </p>
+            <div class="service-tags d-flex flex-wrap gap-1 mb-3">
+              <span class="badge-soft">24/7 Availability</span>
+              <span class="badge-soft">Live Q&A</span>
+              <span class="badge-soft">Instant Advice</span>
+            </div>
+            <button class="btn btn-sm btn-gradient w-100" data-bs-toggle="modal" data-bs-target="#aiAssistantModal">
+              <i class="bi bi-chat-dots-fill me-1"></i> Try AI Career Assistant
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- CAREER ROADMAP SECTION                                               -->
+      <!-- ===================================================================== -->
+      <div id="career-roadmap" class="roadmap-block mt-5 pt-4">
+        <div class="text-center max-w-750 mx-auto mb-4">
+          <span class="badge-pill mb-2">
+            <i class="bi bi-signpost-split text-cyan"></i> Guided Path
+          </span>
+          <h3 class="display-6 fw-bold text-white mb-2">Personalized Career Roadmap</h3>
+          <p class="text-muted">
+            Click on any phase of the roadmap to see curated milestones, tools, and actions tailored for modern tech roles.
+          </p>
+        </div>
+
+        <!-- Interactive Roadmap Progress Stepper -->
+        <div class="glass-panel p-4 p-lg-5">
+          <div class="roadmap-stepper d-flex flex-wrap justify-content-between align-items-center mb-4">
+            
+            <button class="roadmap-btn active" data-phase="1">
+              <span class="phase-number">01</span>
+              <span class="phase-title">Beginner</span>
+            </button>
+            <div class="roadmap-connector"></div>
+
+            <button class="roadmap-btn" data-phase="2">
+              <span class="phase-number">02</span>
+              <span class="phase-title">Learning</span>
+            </button>
+            <div class="roadmap-connector"></div>
+
+            <button class="roadmap-btn" data-phase="3">
+              <span class="phase-number">03</span>
+              <span class="phase-title">Project Building</span>
+            </button>
+            <div class="roadmap-connector"></div>
+
+            <button class="roadmap-btn" data-phase="4">
+              <span class="phase-number">04</span>
+              <span class="phase-title">Internship</span>
+            </button>
+            <div class="roadmap-connector"></div>
+
+            <button class="roadmap-btn" data-phase="5">
+              <span class="phase-number">05</span>
+              <span class="phase-title">Job</span>
+            </button>
+            <div class="roadmap-connector"></div>
+
+            <button class="roadmap-btn" data-phase="6">
+              <span class="phase-number">06</span>
+              <span class="phase-title">Career Growth</span>
+            </button>
+
+          </div>
+
+          <!-- Dynamic Roadmap Content Card -->
+          <div class="roadmap-display glass-card p-4" id="roadmapDisplay">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-8">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-cyan text-dark fw-bold" id="roadmapStageBadge">Phase 1 of 6</span>
+                  <span class="text-muted small" id="roadmapDuration">Estimated: 4 - 8 Weeks</span>
+                </div>
+                <h4 class="text-white fw-bold mb-2" id="roadmapStageHeading">Beginner: Discovering Your Foundation</h4>
+                <p class="text-muted mb-3" id="roadmapStageDesc">
+                  Focus on computational thinking, understanding role domains (Frontend, Backend, AI/ML, Cloud), selecting your primary tech stack, and setting up your developer environment.
+                </p>
+                <div class="roadmap-checkpoints" id="roadmapCheckpoints">
+                  <div class="d-flex align-items-center gap-2 mb-1 text-light">
+                    <i class="bi bi-check-circle-fill text-cyan"></i> Understand Computer Science fundamentals & logic
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mb-1 text-light">
+                    <i class="bi bi-check-circle-fill text-cyan"></i> Pick your primary language (Python, JavaScript, or Java)
+                  </div>
+                  <div class="d-flex align-items-center gap-2 text-light">
+                    <i class="bi bi-check-circle-fill text-cyan"></i> Set up Git, GitHub, and your professional IDE
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="p-3 bg-dark-glow rounded-4">
+                  <div class="text-cyan fw-bold fs-2 mb-1" id="roadmapStatValue">100%</div>
+                  <div class="text-muted small" id="roadmapStatLabel">Foundational Clarity</div>
+                  <hr class="border-secondary my-2">
+                  <span class="badge-soft text-purple" id="roadmapOutcome">Recommended: Daily 2 hrs practice</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. PAST – “How Careers Have Changed”                                      -->
+  <!-- ========================================================================= -->
+  <section id="past" class="section-padding position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-clock-history text-cyan"></i> Historical Evolution
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          How Careers <span class="text-gradient">Have Changed</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          From rigid lifelong jobs to agile, AI-assisted global careers. Discover how the workplace transformed through the decades.
+        </p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="past-timeline position-relative">
+        <div class="past-timeline-bar" aria-hidden="true"></div>
+
+        <!-- 1980s Milestone -->
+        <div class="timeline-row row align-items-center g-4 mb-5">
+          <div class="col-lg-5 text-lg-end order-2 order-lg-1">
+            <div class="glass-card timeline-card p-4">
+              <span class="era-badge text-cyan">1980s</span>
+              <h4 class="text-white fw-bold mt-1 mb-2">Traditional Careers</h4>
+              <p class="text-muted mb-0">
+                Most people followed traditional career paths such as teaching, banking, civil engineering, medicine, and lifelong government jobs. Employment was localized, hierarchical, and paper-based.
+              </p>
+              <div class="timeline-tags mt-3">
+                <span class="badge-soft">Single Employer</span>
+                <span class="badge-soft">Paper Resumes</span>
+                <span class="badge-soft">Local Markets</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center order-1 order-lg-2">
+            <div class="timeline-node">
+              <i class="bi bi-briefcase"></i>
+            </div>
+          </div>
+          <div class="col-lg-5 order-3">
+            <div class="timeline-meta text-muted d-none d-lg-block">
+              <span class="text-cyan fw-bold fs-5">Era of Stability</span>
+              <p class="small mb-0">Careers lasted 35+ years at a single company with defined pension plans.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1990s Milestone -->
+        <div class="timeline-row row align-items-center g-4 mb-5">
+          <div class="col-lg-5 order-2 order-lg-1">
+            <div class="timeline-meta text-muted d-none d-lg-block text-lg-end">
+              <span class="text-purple fw-bold fs-5">Digital Awakening</span>
+              <p class="small mb-0">Spreadsheets, word processors, and early local networks modernized offices.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center order-1 order-lg-2">
+            <div class="timeline-node">
+              <i class="bi bi-display"></i>
+            </div>
+          </div>
+          <div class="col-lg-5 order-3">
+            <div class="glass-card timeline-card p-4">
+              <span class="era-badge text-purple">1990s</span>
+              <h4 class="text-white fw-bold mt-1 mb-2">Computer Era</h4>
+              <p class="text-muted mb-0">
+                Computers started becoming important in offices and education. IT-related careers began growing exponentially, opening opportunities for programmers, database admins, and hardware technicians.
+              </p>
+              <div class="timeline-tags mt-3">
+                <span class="badge-soft">Desktop PCs</span>
+                <span class="badge-soft">IT Services</span>
+                <span class="badge-soft">Email Introduced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2000s Milestone -->
+        <div class="timeline-row row align-items-center g-4 mb-5">
+          <div class="col-lg-5 text-lg-end order-2 order-lg-1">
+            <div class="glass-card timeline-card p-4">
+              <span class="era-badge text-cyan">2000s</span>
+              <h4 class="text-white fw-bold mt-1 mb-2">Internet Era</h4>
+              <p class="text-muted mb-0">
+                The internet created new opportunities in software development, web development, digital marketing, and online business. The Dot-Com era reshaped global communication and freelance collaboration.
+              </p>
+              <div class="timeline-tags mt-3">
+                <span class="badge-soft">Web 2.0</span>
+                <span class="badge-soft">Dot-Com Boom</span>
+                <span class="badge-soft">Online Job Portals</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center order-1 order-lg-2">
+            <div class="timeline-node">
+              <i class="bi bi-globe2"></i>
+            </div>
+          </div>
+          <div class="col-lg-5 order-3">
+            <div class="timeline-meta text-muted d-none d-lg-block">
+              <span class="text-cyan fw-bold fs-5">Connected Planet</span>
+              <p class="small mb-0">Websites became the storefront of the world, birthing modern software engineering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2010s Milestone -->
+        <div class="timeline-row row align-items-center g-4 mb-5">
+          <div class="col-lg-5 order-2 order-lg-1">
+            <div class="timeline-meta text-muted d-none d-lg-block text-lg-end">
+              <span class="text-purple fw-bold fs-5">Pocket Computing</span>
+              <p class="small mb-0">Apps transformed commerce, ridesharing, content creation, and cloud architecture.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center order-1 order-lg-2">
+            <div class="timeline-node">
+              <i class="bi bi-phone"></i>
+            </div>
+          </div>
+          <div class="col-lg-5 order-3">
+            <div class="glass-card timeline-card p-4">
+              <span class="era-badge text-purple">2010s</span>
+              <h4 class="text-white fw-bold mt-1 mb-2">Mobile & Digital Era</h4>
+              <p class="text-muted mb-0">
+                Smartphones, social media, cloud computing (AWS, Azure), and e-commerce created many new career opportunities. App developers, UX designers, and digital marketers became top-tier roles.
+              </p>
+              <div class="timeline-tags mt-3">
+                <span class="badge-soft">iOS & Android</span>
+                <span class="badge-soft">Cloud Computing</span>
+                <span class="badge-soft">UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2020s Milestone -->
+        <div class="timeline-row row align-items-center g-4">
+          <div class="col-lg-5 text-lg-end order-2 order-lg-1">
+            <div class="glass-card timeline-card p-4 border-ai-glow">
+              <span class="era-badge text-cyan">2020s &bull; Present</span>
+              <h4 class="text-white fw-bold mt-1 mb-2">AI & Remote Work</h4>
+              <p class="text-muted mb-0">
+                Remote work, artificial intelligence, automation, cybersecurity, cloud computing, and data science became increasingly important. Borderless hiring and generative AI redefined workplace productivity.
+              </p>
+              <div class="timeline-tags mt-3">
+                <span class="badge-soft">GenAI & LLMs</span>
+                <span class="badge-soft">Work From Anywhere</span>
+                <span class="badge-soft">Cyber Defense</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center order-1 order-lg-2">
+            <div class="timeline-node active-pulse">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+          </div>
+          <div class="col-lg-5 order-3">
+            <div class="timeline-meta text-muted d-none d-lg-block">
+              <span class="text-gradient fw-bold fs-5">Autonomous Age</span>
+              <p class="small mb-0">Speed, continuous skill adaptation, and human-AI synergy define modern career survival.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. FUTURE – “Careers of Tomorrow”                                        -->
+  <!-- ========================================================================= -->
+  <section id="future" class="section-padding bg-secondary-dark position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-rocket-takeoff-fill text-purple"></i> Next Horizon
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          Careers of <span class="text-gradient">Tomorrow</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          A forward-looking exploration of upcoming platform innovations. Discover what CareerConnect could provide in the near future.
+        </p>
+        <div class="mt-2">
+          <span class="badge bg-purple-subtle text-purple px-3 py-2 rounded-pill border border-purple-subtle">
+            <i class="bi bi-lightbulb me-1"></i> Planned / Future Possibilities (Conceptual Roadmap)
+          </span>
+        </div>
+      </div>
+
+      <!-- Futuristic Trajectory Stepper -->
+      <div class="trajectory-wrapper glass-panel p-4 mb-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center text-center gap-3">
+          
+          <div class="trajectory-node active">
+            <div class="trajectory-badge">Today</div>
+            <div class="trajectory-title text-white fw-bold">AI Assistance</div>
+            <div class="trajectory-desc text-muted small">Guidance & Resumes</div>
+          </div>
+
+          <div class="trajectory-line flex-grow-1 d-none d-md-block"></div>
+
+          <div class="trajectory-node">
+            <div class="trajectory-badge">2027</div>
+            <div class="trajectory-title text-white fw-bold">Neural Matching</div>
+            <div class="trajectory-desc text-muted small">Skill Forecasting & VR</div>
+          </div>
+
+          <div class="trajectory-line flex-grow-1 d-none d-md-block"></div>
+
+          <div class="trajectory-node">
+            <div class="trajectory-badge">2030</div>
+            <div class="trajectory-title text-white fw-bold">Digital Twin</div>
+            <div class="trajectory-desc text-muted small">Autonomous Careers</div>
+          </div>
+
+          <div class="trajectory-line flex-grow-1 d-none d-md-block"></div>
+
+          <div class="trajectory-node">
+            <div class="trajectory-badge">Future</div>
+            <div class="trajectory-title text-white fw-bold">Quantum Work</div>
+            <div class="trajectory-desc text-muted small">Bio-Tech & Spatial Web</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 7 Future Features Grid -->
+      <div class="row g-4">
+        
+        <!-- Future 1: AI Career Advisor -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-cyan mb-3">
+              <i class="bi bi-robot"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">AI Career Advisor</h4>
+            <p class="text-muted mb-0">
+              AI can continuously analyze a user's evolving skills, cognitive strengths, and passions to proactively suggest possible career paths before market shifts occur.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 2: Personalized Learning -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-purple mb-3">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Personalized Learning</h4>
+            <p class="text-muted mb-0">
+              The platform dynamically generates custom bite-sized interactive micro-curricula and labs based on specific career objectives and gaps in the candidate’s profile.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 3: AI Resume Analysis -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-cyan mb-3">
+              <i class="bi bi-file-earmark-diff"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">AI Resume Analysis</h4>
+            <p class="text-muted mb-0">
+              Users can upload their resume and receive real-time semantic suggestions for improving technical impact metrics, industry keywords, and formatting clarity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 4: Virtual Interview -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-purple mb-3">
+              <i class="bi bi-headset-vr"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Virtual Interview</h4>
+            <p class="text-muted mb-0">
+              AI-powered mock interviews simulate realistic panel questioning, analyze eye contact and vocal inflection, and deliver immediate scorecards for rapid improvement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 5: Skill Prediction -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-cyan mb-3">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Skill Prediction</h4>
+            <p class="text-muted mb-0">
+              Machine learning models analyze patent databases and global job postings to identify emerging technologies 18–24 months before they hit mainstream hiring.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 6: Career Digital Twin -->
+        <div class="col-md-6 col-lg-4">
+          <div class="future-card glass-card h-100 p-4">
+            <div class="future-tag">Planned Concept</div>
+            <div class="future-icon text-purple mb-3">
+              <i class="bi bi-person-bounding-box"></i>
+            </div>
+            <h4 class="h5 fw-bold text-white mb-2">Career Digital Twin</h4>
+            <p class="text-muted mb-0">
+              Users simulate simulated 3-to-10 year career journeys in a sandbox model to visualize required certifications, compensations, and risk vectors across industries.
+            </p>
+          </div>
+        </div>
+
+        <!-- Future 7: Global Opportunities -->
+        <div class="col-md-12 col-lg-12">
+          <div class="future-card glass-card p-4 p-md-5 border-gradient">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-8">
+                <div class="future-tag mb-2">Planned Concept</div>
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="future-icon text-cyan fs-1 mb-0">
+                    <i class="bi bi-globe-americas"></i>
+                  </div>
+                  <div>
+                    <h4 class="h4 fw-bold text-white mb-1">Global Opportunities</h4>
+                    <span class="text-muted">Borderless talent network connecting top minds to distributed teams</span>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">
+                  Connect users with vetted international internships, high-impact freelance collectives, and remote-first unicorn opportunities with automated cross-border compliance.
+                </p>
+              </div>
+              <div class="col-lg-4 text-center text-lg-end">
+                <button class="btn btn-outline-cyan" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                  <i class="bi bi-bell me-1"></i> Pre-Register For Future Access
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. “CAREERCONNECT IN 2030” SECTION (Futuristic Dashboard)                 -->
+  <!-- ========================================================================= -->
+  <section id="future-2030" class="section-padding position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-motherboard text-cyan"></i> Next-Gen Interface
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          Imagine CareerConnect in <span class="text-gradient">2030</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          A conceptual glimpse into an autonomous, real-time AI career terminal designed for spatial computing and interconnected work ecosystems.
+        </p>
+      </div>
+
+      <!-- 8 Key Capabilities Chips -->
+      <div class="row g-2 mb-4 justify-content-center">
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-cyan me-1"></i> AI-powered career planning</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-purple me-1"></i> Personalized learning</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-cyan me-1"></i> Virtual reality interviews</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-purple me-1"></i> AI skill assessment</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-cyan me-1"></i> Global remote opportunities</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-purple me-1"></i> Automated career roadmap</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-cyan me-1"></i> Real-time industry skill trends</span></div>
+        <div class="col-auto"><span class="capability-pill"><i class="bi bi-check-circle text-purple me-1"></i> AI-powered mentorship</span></div>
+      </div>
+
+      <!-- Animated Futuristic Dashboard Mockup -->
+      <div class="dashboard-mockup-wrapper glass-panel p-3 p-md-4 rounded-4 position-relative overflow-hidden">
+        
+        <!-- Dashboard Top Status Bar -->
+        <div class="dashboard-header d-flex flex-wrap justify-content-between align-items-center gap-3 pb-3 mb-4 border-bottom border-secondary">
+          <div class="d-flex align-items-center gap-3">
+            <div class="status-indicator">
+              <span class="status-pulse"></span>
+              <span class="status-text text-cyan">LIVE NEURAL LINK ACTIVE</span>
+            </div>
+            <span class="badge-soft text-light">Node #CC-2030-ALPHA</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="user-avatar-badge d-flex align-items-center gap-2">
+              <div class="avatar-circle">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="text-start">
+                <div class="text-white small fw-bold">Alex Chen</div>
+                <div class="text-muted extra-small">Digital Twin ID: #778-DX</div>
+              </div>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success-subtle">
+              <i class="bi bi-shield-check"></i> Synchronized
+            </span>
+          </div>
+        </div>
+
+        <!-- Dashboard Main Grid -->
+        <div class="row g-4">
+          
+          <!-- Column 1: Live Skill Assessment Radar & Readiness -->
+          <div class="col-lg-4">
+            <div class="dash-widget glass-card p-3 h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-white fw-bold mb-0">
+                  <i class="bi bi-pie-chart text-cyan me-1"></i> AI Skill Assessment
+                </h6>
+                <span class="badge-soft text-cyan">Live Radar</span>
+              </div>
+
+              <!-- Animated Radial Progress -->
+              <div class="radial-score-container text-center my-3">
+                <div class="radial-ring position-relative mx-auto">
+                  <div class="radial-inner-content">
+                    <span class="radial-number display-6 fw-bold text-white">96.8</span>
+                    <span class="radial-label text-muted d-block small">READINESS SCORE</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dash-skill-bars mt-4">
+                <div class="skill-bar-item mb-3">
+                  <div class="d-flex justify-content-between text-muted small mb-1">
+                    <span>Autonomous AI Agents</span>
+                    <span class="text-cyan">98%</span>
+                  </div>
+                  <div class="progress custom-progress">
+                    <div class="progress-bar bg-cyan" style="width: 98%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item mb-3">
+                  <div class="d-flex justify-content-between text-muted small mb-1">
+                    <span>Spatial Computing & UI</span>
+                    <span class="text-purple">92%</span>
+                  </div>
+                  <div class="progress custom-progress">
+                    <div class="progress-bar bg-purple" style="width: 92%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-item">
+                  <div class="d-flex justify-content-between text-muted small mb-1">
+                    <span>Quantum Algorithm Logic</span>
+                    <span class="text-cyan">87%</span>
+                  </div>
+                  <div class="progress custom-progress">
+                    <div class="progress-bar bg-cyan" style="width: 87%"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Automated Career Roadmap & Real-time Trends -->
+          <div class="col-lg-5">
+            <div class="dash-widget glass-card p-3 h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-white fw-bold mb-0">
+                  <i class="bi bi-diagram-2 text-purple me-1"></i> Automated Career Roadmap
+                </h6>
+                <span class="badge bg-purple-subtle text-purple border border-purple-subtle">
+                  Autonomous Optimization
+                </span>
+              </div>
+
+              <!-- Roadmap Path Steps -->
+              <div class="dash-roadmap-steps my-3">
+                <div class="d-step-item completed mb-3">
+                  <div class="d-step-icon"><i class="bi bi-check-lg"></i></div>
+                  <div class="d-step-info">
+                    <div class="text-white fw-semibold small">Full-Stack AI Specialization</div>
+                    <div class="text-muted extra-small">Completed 12 Micro-Credentials &bull; Passed Peer Review</div>
+                  </div>
+                </div>
+
+                <div class="d-step-item current mb-3">
+                  <div class="d-step-icon"><i class="bi bi-arrow-repeat spin-slow"></i></div>
+                  <div class="d-step-info">
+                    <div class="text-cyan fw-semibold small">Autonomous Agent Architecture</div>
+                    <div class="text-muted extra-small">Active Milestone 3/5 &bull; AI Mentor &ldquo;Athena-9&rdquo; Guiding</div>
+                  </div>
+                </div>
+
+                <div class="d-step-item upcoming">
+                  <div class="d-step-icon"><i class="bi bi-lock-fill"></i></div>
+                  <div class="d-step-info">
+                    <div class="text-muted fw-semibold small">Global Principal AI Role Match</div>
+                    <div class="text-muted extra-small">Automated Contract Simulation &bull; Projected Q1 2030</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Real-time Industry Skill Trends Ticker -->
+              <div class="dash-trends-box p-3 rounded-3 mt-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-white small fw-bold">
+                    <i class="bi bi-graph-up-arrow text-cyan me-1"></i> Real-time Market Trends
+                  </span>
+                  <span class="badge-soft text-cyan extra-small">Updated 10s ago</span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="trend-tag"><i class="bi bi-caret-up-fill text-success"></i> Neuromorphic Tech +84%</span>
+                  <span class="trend-tag"><i class="bi bi-caret-up-fill text-success"></i> Zero-Knowledge AI +62%</span>
+                  <span class="trend-tag"><i class="bi bi-caret-up-fill text-success"></i> Green Cloud +45%</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 3: VR Interview & Global Remote Hub -->
+          <div class="col-lg-3">
+            <div class="dash-widget glass-card p-3 h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-white fw-bold mb-0">
+                  <i class="bi bi-headset-vr text-cyan me-1"></i> VR Interview
+                </h6>
+                <span class="badge bg-danger-subtle text-danger border border-danger-subtle extra-small">SIMULATION</span>
+              </div>
+
+              <!-- Hologram Avatar Simulation Card -->
+              <div class="vr-avatar-box text-center p-3 rounded-3 mb-3 position-relative overflow-hidden">
+                <div class="vr-grid-bg"></div>
+                <div class="vr-avatar-glow mx-auto mb-2">
+                  <i class="bi bi-person-workspace text-cyan fs-1"></i>
+                </div>
+                <div class="text-white small fw-bold">Interviewer: Nexus-7 AI</div>
+                <div class="text-muted extra-small">Behavioral & Spatial Analysis</div>
+                <div class="audio-wave mt-2">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <!-- Global Remote Opportunities Widget -->
+              <div class="dash-global-jobs">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="text-white small fw-bold">
+                    <i class="bi bi-globe text-purple me-1"></i> Global Remote Matches
+                  </span>
+                </div>
+                <div class="job-mini-item p-2 rounded-2 mb-2">
+                  <div class="d-flex justify-content-between">
+                    <span class="text-light small fw-bold">AI Systems Lead</span>
+                    <span class="badge-soft text-cyan">$210K / yr</span>
+                  </div>
+                  <span class="text-muted extra-small">NeoTokyo Labs &bull; 99% Fit</span>
+                </div>
+                <div class="job-mini-item p-2 rounded-2">
+                  <div class="d-flex justify-content-between">
+                    <span class="text-light small fw-bold">Quantum Dev Intern</span>
+                    <span class="badge-soft text-purple">Remote EU</span>
+                  </div>
+                  <span class="text-muted extra-small">Synthetix &bull; 94% Fit</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. HOW IT WORKS                                                          -->
+  <!-- ========================================================================= -->
+  <section id="how-it-works" class="section-padding bg-secondary-dark position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-signpost-2-fill text-cyan"></i> Streamlined Process
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          How It <span class="text-gradient">Works</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          Four effortless steps to clarify your direction, acquire recognized skills, and land your ideal role.
+        </p>
+      </div>
+
+      <!-- 4 Steps Flow with Connecting Visual -->
+      <div class="how-it-works-wrapper position-relative">
+        <div class="connector-track d-none d-lg-block" aria-hidden="true"></div>
+
+        <div class="row g-4 position-relative z-1">
+          
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="how-card glass-card h-100 p-4 text-center">
+              <div class="step-badge-number mb-3">01</div>
+              <div class="how-icon-box bg-cyan-glow mx-auto mb-3">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <h4 class="h5 fw-bold text-white mb-2">Create Your Profile</h4>
+              <p class="text-muted small mb-0">
+                Sign up in minutes. Input your education, interests, projects, and target industry preferences into your smart portfolio.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="how-card glass-card h-100 p-4 text-center">
+              <div class="step-badge-number mb-3">02</div>
+              <div class="how-icon-box bg-purple-glow mx-auto mb-3">
+                <i class="bi bi-compass-fill"></i>
+              </div>
+              <h4 class="h5 fw-bold text-white mb-2">Discover Your Career</h4>
+              <p class="text-muted small mb-0">
+                Let our AI match your unique aptitudes with high-growth career tracks and highlight real-world demand in the job market.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="how-card glass-card h-100 p-4 text-center">
+              <div class="step-badge-number mb-3">03</div>
+              <div class="how-icon-box bg-indigo-glow mx-auto mb-3">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h4 class="h5 fw-bold text-white mb-2">Build Your Skills</h4>
+              <p class="text-muted small mb-0">
+                Follow tailored roadmaps, complete project milestones, and generate an ATS-optimized resume with verified credentials.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="how-card glass-card h-100 p-4 text-center">
+              <div class="step-badge-number mb-3">04</div>
+              <div class="how-icon-box bg-cyan-glow mx-auto mb-3">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+              </div>
+              <h4 class="h5 fw-bold text-white mb-2">Connect With Opportunities</h4>
+              <p class="text-muted small mb-0">
+                Apply directly to vetted jobs, internships, and freelance roles while receiving interview coaching from our AI Assistant.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Action Callout -->
+      <div class="text-center mt-5">
+        <button class="btn btn-gradient btn-lg" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+          <i class="bi bi-arrow-right-circle-fill me-2"></i> Start Your Journey Today
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. CONTACT SECTION                                                       -->
+  <!-- ========================================================================= -->
+  <section id="contact" class="section-padding position-relative">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-750 mx-auto mb-5">
+        <span class="badge-pill mb-2">
+          <i class="bi bi-chat-left-dots-fill text-cyan"></i> Get In Touch
+        </span>
+        <h2 class="section-title display-5 fw-extrabold text-white mb-3">
+          Have questions about your career? <br class="d-none d-md-block">
+          <span class="text-gradient">Let's connect.</span>
+        </h2>
+        <p class="section-subtitle lead text-muted">
+          Whether you need personalized guidance, enterprise partnership, or technical support, our team is ready to help.
+        </p>
+      </div>
+
+      <div class="row g-5 align-items-center">
+        
+        <!-- Left: Contact Details Cards -->
+        <div class="col-lg-5">
+          <div class="contact-info-wrapper">
+            
+            <div class="glass-card p-4 mb-3 d-flex align-items-center gap-3">
+              <div class="contact-icon bg-cyan-glow">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">Email Us</h6>
+                <p class="text-muted mb-0 small">contact@careerconnect.io</p>
+                <span class="badge-soft text-cyan extra-small">Replies in ~2 hours</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-4 mb-3 d-flex align-items-center gap-3">
+              <div class="contact-icon bg-purple-glow">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">Call Our Advisory Team</h6>
+                <p class="text-muted mb-0 small">+1 (800) 555-CAREER</p>
+                <span class="badge-soft text-purple extra-small">Mon - Fri &bull; 9AM - 6PM EST</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-4 mb-3 d-flex align-items-center gap-3">
+              <div class="contact-icon bg-indigo-glow">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="text-white mb-1">Innovation Hub</h6>
+                <p class="text-muted mb-0 small">Silicon Valley & Global Distributed Nodes</p>
+                <span class="badge-soft text-light extra-small">Worldwide Community</span>
+              </div>
+            </div>
+
+            <!-- FAQ Help Callout -->
+            <div class="p-4 rounded-4 bg-secondary-dark border border-secondary">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-question-circle-fill text-cyan"></i>
+                <span class="text-white fw-bold small">Need Immediate Career Advice?</span>
+              </div>
+              <p class="text-muted small mb-2">
+                Our AI Career Assistant is trained on 10,000+ industry frameworks and accessible instantly.
+              </p>
+              <button class="btn btn-sm btn-outline-cyan" data-bs-toggle="modal" data-bs-target="#aiAssistantModal">
+                Launch AI Assistant Now
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="col-lg-7">
+          <div class="glass-panel p-4 p-md-5 rounded-4 position-relative">
+            <h3 class="h4 text-white fw-bold mb-4">Send Us a Message</h3>
+            
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label text-light small">Full Name <span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-group"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control custom-input" id="fullName" placeholder="e.g. Sarah Jenkins" required>
+                  </div>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="emailAddress" class="form-label text-light small">Email Address <span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-group"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control custom-input" id="emailAddress" placeholder="sarah@example.com" required>
+                  </div>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                  <label for="phoneNumber" class="form-label text-light small">Phone Number</label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-group"><i class="bi bi-telephone"></i></span>
+                    <input type="tel" class="form-control custom-input" id="phoneNumber" placeholder="+1 (555) 000-0000">
+                  </div>
+                </div>
+
+                <!-- Career Interest -->
+                <div class="col-md-6">
+                  <label for="careerInterest" class="form-label text-light small">Career Interest <span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-group"><i class="bi bi-briefcase"></i></span>
+                    <select class="form-select custom-input" id="careerInterest" required>
+                      <option value="" disabled selected>Select Your Interest</option>
+                      <option value="AI & Machine Learning">AI & Machine Learning</option>
+                      <option value="Full-Stack Web Development">Full-Stack Web Development</option>
+                      <option value="Data Science & Analytics">Data Science & Analytics</option>
+                      <option value="Cloud & DevOps Engineering">Cloud & DevOps Engineering</option>
+                      <option value="Cybersecurity">Cybersecurity</option>
+                      <option value="UI/UX & Product Design">UI/UX & Product Design</option>
+                      <option value="Product & Project Management">Product & Project Management</option>
+                      <option value="Other Career Track">Other Career Track</option>
+                    </select>
+                  </div>
+                  <div class="invalid-feedback">Please select your primary career interest.</div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label text-light small">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control custom-input" id="contactMessage" rows="4" placeholder="Tell us about your background, career goals, or any questions you have..." required></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gradient w-100 py-3" id="submitContactBtn">
+                    <span class="btn-text"><i class="bi bi-send-fill me-2"></i> Submit Message</span>
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. FOOTER                                                                -->
+  <!-- ========================================================================= -->
+  <footer class="footer-section pt-5 pb-4 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        
+        <!-- Brand & Tagline -->
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 mb-3 text-decoration-none" href="#home">
+            <span class="brand-icon-wrapper">
+              <i class="bi bi-cpu-fill brand-icon"></i>
+            </span>
+            <span class="brand-text fs-4">Career<span class="text-gradient">Connect</span></span>
+          </a>
+          <p class="text-muted mb-4 pe-lg-3">
+            Connecting people with opportunities and preparing careers for tomorrow. Empowering students, freshers, and professionals with AI-driven clarity.
+          </p>
+          <div class="social-links d-flex gap-2">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Discord"><i class="bi bi-discord"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h6 class="text-white fw-bold mb-3">Navigation</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#past">Past</a></li>
+            <li><a href="#future">Future</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform Solutions -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Platform Tools</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#services">Career Guidance</a></li>
+            <li><a href="#services">Skill Development</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume Builder</a></li>
+            <li><a href="#services">Job Opportunities</a></li>
+            <li><a href="#services">Interview Preparation</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#aiAssistantModal">AI Career Assistant</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter / Vision -->
+        <div class="col-md-6 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Stay Ahead</h6>
+          <p class="text-muted small mb-3">
+            Get weekly market skill forecasts and curated remote job drops straight to your inbox.
+          </p>
+          <form id="newsletterForm" class="newsletter-box">
+            <div class="input-group">
+              <input type="email" class="form-control custom-input" placeholder="Your work email" required>
+              <button class="btn btn-cyan" type="submit"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </form>
+          <div class="text-muted extra-small mt-2">Zero spam. Unsubscribe at any time.</div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Bar -->
+      <div class="border-top border-secondary pt-4 d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <p class="text-muted small mb-0">
+          &copy; 2026 CareerConnect. All Rights Reserved.
+        </p>
+        <div class="footer-legal d-flex gap-3 small text-muted">
+          <a href="#home" class="text-muted text-decoration-none">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#home" class="text-muted text-decoration-none">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#home" class="text-muted text-decoration-none">Security</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: GET STARTED / ONBOARDING                                          -->
+  <!-- ========================================================================= -->
+  <div class="modal fade" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-panel border-secondary text-white">
+        
+        <div class="modal-header border-secondary">
+          <div class="d-flex align-items-center gap-2">
+            <div class="badge-icon-box bg-cyan-glow p-2 rounded-3">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="getStartedModalLabel">Welcome to CareerConnect</h5>
+              <span class="text-muted small">Choose your path to begin your personalized journey</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-target="#getStartedModal" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          <div class="text-center mb-4">
+            <h6 class="text-light">Which best describes your current position?</h6>
+          </div>
+
+          <div class="row g-3 mb-4" id="roleSelectorGroup">
+            
+            <div class="col-md-4">
+              <div class="role-select-card active" data-role="student">
+                <i class="bi bi-mortarboard-fill role-icon text-cyan"></i>
+                <h6 class="fw-bold mb-1">Student</h6>
+                <p class="extra-small text-muted mb-0">Discover career paths & learn modern tech fundamentals</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="role-select-card" data-role="fresher">
+                <i class="bi bi-briefcase-fill role-icon text-purple"></i>
+                <h6 class="fw-bold mb-1">Fresher</h6>
+                <p class="extra-small text-muted mb-0">Build resumes, crack interviews & land entry jobs</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="role-select-card" data-role="professional">
+                <i class="bi bi-arrow-up-right-circle-fill role-icon text-cyan"></i>
+                <h6 class="fw-bold mb-1">Professional</h6>
+                <p class="extra-small text-muted mb-0">Upskill into AI, Cloud & scale leadership trajectory</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Onboarding Form -->
+          <form id="onboardingForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small text-muted">Your Name</label>
+                <input type="text" class="form-control custom-input" placeholder="Alex Morgan" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-muted">Target Career Field</label>
+                <select class="form-select custom-input" required>
+                  <option selected value="AI & Machine Learning">AI & Machine Learning</option>
+                  <option value="Web Development">Full-Stack Development</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Cloud/DevOps">Cloud & DevOps</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label small text-muted">Email for Access</label>
+                <input type="email" class="form-control custom-input" placeholder="alex@domain.com" required>
+              </div>
+            </div>
+            <div class="mt-4">
+              <button type="submit" class="btn btn-gradient w-100 py-2">
+                Launch My Personalized Roadmap <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: AI CAREER ASSISTANT INTERACTIVE DEMO                              -->
+  <!-- ========================================================================= -->
+  <div class="modal fade" id="aiAssistantModal" tabindex="-1" aria-labelledby="aiAssistantModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-panel border-secondary text-white">
+        
+        <div class="modal-header border-secondary">
+          <div class="d-flex align-items-center gap-2">
+            <div class="badge-icon-box bg-ai-gradient p-2 rounded-3">
+              <i class="bi bi-stars"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="aiAssistantModalLabel">AI Career Assistant (Interactive Demo)</h5>
+              <span class="text-muted small">Ask questions about skills, transitions, roadmaps, or interview tips</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          
+          <!-- Sample Prompt Pills -->
+          <div class="mb-3">
+            <div class="small text-muted mb-2">Try a sample prompt:</div>
+            <div class="d-flex flex-wrap gap-2" id="samplePromptContainer">
+              <button class="btn btn-sm btn-outline-secondary text-light prompt-chip" data-prompt="What skills do I need to become an AI Engineer in 2026?">
+                AI Engineer Skills
+              </button>
+              <button class="btn btn-sm btn-outline-secondary text-light prompt-chip" data-prompt="How should a fresher prepare for technical coding interviews?">
+                Fresher Interview Tips
+              </button>
+              <button class="btn btn-sm btn-outline-secondary text-light prompt-chip" data-prompt="What makes a resume pass modern ATS scanners?">
+                ATS Resume Secrets
+              </button>
+              <button class="btn btn-sm btn-outline-secondary text-light prompt-chip" data-prompt="Is Full-Stack or Cloud Computing better for a fresher?">
+                Full-Stack vs Cloud
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Conversation Log -->
+          <div class="ai-chat-window glass-card p-3 mb-3 rounded-3" id="aiChatWindow">
+            
+            <!-- AI Welcome Message -->
+            <div class="chat-message ai-message mb-3">
+              <div class="d-flex align-items-start gap-2">
+                <div class="chat-avatar bg-ai-gradient"><i class="bi bi-robot"></i></div>
+                <div class="chat-bubble">
+                  <div class="fw-bold text-cyan small mb-1">CareerConnect AI</div>
+                  <p class="mb-0 small">
+                    Hello! I'm your Career Assistant. I can recommend curated learning paths, analyze high-demand tech stacks, give mock interview questions, and review your career strategies. Ask me anything!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Chat Input -->
+          <form id="aiChatForm" class="d-flex gap-2">
+            <input type="text" class="form-control custom-input" id="aiUserInput" placeholder="Type your career question here..." required>
+            <button class="btn btn-gradient px-4" type="submit">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: RESUME SCORE CHECKER DEMO                                         -->
+  <!-- ========================================================================= -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-panel border-secondary text-white">
+        
+        <div class="modal-header border-secondary">
+          <div class="d-flex align-items-center gap-2">
+            <div class="badge-icon-box bg-cyan-glow p-2 rounded-3">
+              <i class="bi bi-file-earmark-check-fill"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="resumeModalLabel">ATS Resume Strength Analyzer</h5>
+              <span class="text-muted small">Simulate an ATS audit on your career keywords</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4">
+          <div class="mb-3">
+            <label class="form-label text-light small">Paste your resume summary or skills:</label>
+            <textarea class="form-control custom-input" id="resumeSnippet" rows="4" placeholder="e.g. Computer Science graduate with hands-on experience in React, Python, Node.js, REST APIs, Git, and SQL. Built 3 full-stack projects including an e-commerce platform with Stripe integration..."></textarea>
+          </div>
+
+          <div class="mb-3">
+            <button class="btn btn-gradient w-100" id="analyzeResumeBtn">
+              <i class="bi bi-lightning-charge me-1"></i> Run AI ATS Analysis
+            </button>
+          </div>
+
+          <!-- Results Box (Initially Hidden until analyzed) -->
+          <div class="glass-card p-3 rounded-3 d-none" id="resumeResultsBox">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h6 class="text-white fw-bold mb-0">Analysis Scorecard</h6>
+              <span class="badge bg-success-subtle text-success border border-success-subtle" id="resumeScoreBadge">92 / 100 &bull; Strong</span>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-4 text-center p-2 rounded bg-secondary-dark">
+                <div class="small text-muted">Keyword Match</div>
+                <div class="fw-bold text-cyan" id="kwMatchVal">95%</div>
+              </div>
+              <div class="col-4 text-center p-2 rounded bg-secondary-dark">
+                <div class="small text-muted">ATS Readability</div>
+                <div class="fw-bold text-purple" id="readabilityVal">High</div>
+              </div>
+              <div class="col-4 text-center p-2 rounded bg-secondary-dark">
+                <div class="small text-muted">Impact Verbs</div>
+                <div class="fw-bold text-success" id="impactVal">8 Found</div>
+              </div>
+            </div>
+            <div class="small text-light" id="resumeFeedbackText">
+              <i class="bi bi-check-circle-fill text-success me-1"></i> Excellent quantification of project metrics. Consider adding cloud deployment keywords (Docker, AWS) for modern enterprise roles.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING BACK TO TOP BUTTON                                              -->
+  <!-- ========================================================================= -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- TOAST CONTAINER FOR NOTIFICATIONS -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
+    <div id="actionToast" class="toast align-items-center text-white bg-dark-glass border-cyan" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi bi-check-circle-fill text-cyan fs-5" id="toastIcon"></i>
+          <span id="toastMessage">Success! Action completed.</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
