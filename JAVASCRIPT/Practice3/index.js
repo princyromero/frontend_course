@@ -23,4 +23,3 @@ for (let score =1; score<=100; score++){
     line +=score +""
 }
 console.log(line);
-
