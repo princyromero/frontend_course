@@ -68,3 +68,12 @@ for (let a = 0; a < keys.length; a++) {
     console.log(keys[a], car[keys[a]]);
 }
 
+
+//Task10
+
+let Sclstudents = [{name: "Arun",mark: 80},{name: "Priya",mark: 90},
+    {name: "Kumar",mark: 75}];
+
+for (let a = 0; a < Sclstudents.length; a++) {
+    console.log(Sclstudents[a].name + " - " + Sclstudents[a].mark);
+}
