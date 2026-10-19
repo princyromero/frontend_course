@@ -1,9 +1,8 @@
-const product =() =>{
-    let inner = (box) =>{
-        producttools += box
-        console.log('producttool', producttool);
+const addtocart =() =>{
+    const product = () =>{
+        product += box
+        console.log('product', product);
     }
     return inner
 }
-const adding new = product()
 adding()
