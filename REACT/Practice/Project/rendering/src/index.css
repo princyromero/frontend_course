@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.Navbar{
+background-color: blueviolet ;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.Link{
+  display: flex;
+  gap: 20px;
+}
+
+.btn{
+  background-color:lightgrey;
+  color: black;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+  transition: all 1s;
+}
+
+
+.btn:hover{
+  background-color: lightpink;
+  transform: scale(1.0);
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+
+
+.logo img{
+  width: 120px;
+  border-radius: 120px;
+}
+  
