@@ -1,8 +1,9 @@
 
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Student from "./components/Student";
-import Footer from "./Footer";
+
 
 
 const App=() => {
