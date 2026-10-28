@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Tasks</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0fbff;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #d9f5fb;
+            color: #087e9b;
+            padding: 25px;
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .day-card {
+            background-color: white;
+            padding: 22px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+            min-height: 220px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 10px 22px rgba(8, 126, 155, 0.20);
+            border-color: #61d4e8;
+            background-color: #f7feff;
+        }
+
+        .day-image {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            transition: 0.4s ease;
+        }
+
+        .day-card:hover .day-image {
+            transform: rotate(8deg) scale(1.12);
+        }
+
+        .day-card h2 {
+            margin: 5px 0 15px;
+            color: #087e9b;
+            font-size: 20px;
+        }
+
+        .task {
+            display: block;
+            width: 100%;
+            background-color: #16a6c2;
+            color: white;
+            text-align: center;
+            padding: 11px;
+            margin-top: 12px;
+            border-radius: 22px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s ease;
+        }
+
+        .task:hover {
+            background-color: #087e9b;
+            transform: translateX(5px);
+            box-shadow: 0 4px 10px rgba(8, 126, 155, 0.25);
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                width: 90%;
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>⚛️ React Tasks</h1>
+
+    <div class="container">
+
+        <div class="day-card">
+            <h2>Day-1</h2>
+        </div>
+
+        
+        <div class="day-card">
+            <h2>Day-2</h2>
+        </div>
+
+        <div class="day-card">
+            <h2>Day-3</h2>
+        </div>
+
+
+        <div class="day-card">
+            <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React Logo"
+                class="day-image">
+
+        <div class="day-card">
+            <h2>Day-6</h2>
+            <a href="../React/Day6/my-app/src/Components/Banner.jsx" class="task">
+                Task-1
+            </a>
+        </div>
+
+
+        
+    </div>
+
+</body>
+</html>
+React index
