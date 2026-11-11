@@ -1,10 +1,11 @@
-CREATE DATABASE Studentdb;
+CREATE DATABASE college_db;
+use college_db;
 
-use studentdb;
-create table student(
-student_id int primary key auto_increment,
-student_name varchar(100) not null,
-age int CHECK (age >= 18)
-
-
+CREATE TABLE students (
+student_id INT PRIMARY KEY AUTO_INCREMENT,
+student_name VARCHAR(100) NOT NULL,
+age INT CHECK (age >= 18),
+email VARCHAR(100) UNIQUE,
+city VARCHAR(50) DEFAULT 'Chennai',
+admission_date DATE
 );

@@ -1,12 +1,16 @@
-create database company_db;
-use company_db;
-CREATE TABLE employees (
-emp_id INT PRIMARY KEY AUTO_INCREMENT,
-emp_name VARCHAR(100) NOT NULL,
-email VARCHAR(100) UNIQUE,
-salary DECIMAL(10,2) CHECK (salary > 10000),
-department VARCHAR(50) DEFAULT 'IT',
-joining_date DATE NOT NULL,
-status VARCHAR(20) DEFAULT 'Active',
+CREATE DATABASE ecommerce_db;
+USE ecommerce_db;
+
+CREATE TABLE products (
+product_id INT PRIMARY KEY AUTO_INCREMENT,
+product_name VARCHAR(150) NOT NULL,
+product_code VARCHAR(30) UNIQUE,
+category VARCHAR(50) NOT NULL,
+price DECIMAL(10,2) CHECK (price > 0),
+stock INT DEFAULT 0,
+brand VARCHAR(50) DEFAULT 'Generic',
+manufacture_date DATE,
+expiry_date DATE,
+is_available BOOLEAN DEFAULT TRUE,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
