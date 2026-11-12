@@ -30,12 +30,13 @@ const App = () => {
   return (<>
   <div>
     <form>
-      <input type="text" placeholder="enter the name" value={"showname"} onChange={handlechangeName} />
-      <input type="text" placeholder="enter the age"value={"showage"} onChange={handlechangeAge} />
-      <input type="text" placeholder="enter the number" value={"shownumber"} onChange={handlechangeNumber} />
-      <button onClick={handleclick}>register</button>
+      <input type="text" placeholder="enter the name" value={showname} onChange={handlechangeName} />
+      <input type="text" placeholder="enter the age"value={showage} onChange={handlechangeAge} />
+      <input type="text" placeholder="enter the number" value={shownumber} onChange={handlechangeNumber} />
+      <button onclick={handleclick}>register</button>
     </form>
   </div>
+
   <div>
     <table>
       <thead>
@@ -60,8 +61,13 @@ const App = () => {
    
 
   </div>
-  
+
+
+
+
+
   </>)
 }
 
 export default App
+
