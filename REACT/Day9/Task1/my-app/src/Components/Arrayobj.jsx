@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-const ArrObj = () => {
+const ArrayObj = () => {
     const [arrobj,setArrObj] = useState([{name:"React",age:30},{name:"JS",age:90},{name:"Node",age:32},{name:"Reacts",age:70}])
   
     const handleClick = ()=>{
@@ -56,4 +56,4 @@ const ArrObj = () => {
   )
 }
 
-export default ArrObj
+export default ArrayObj
